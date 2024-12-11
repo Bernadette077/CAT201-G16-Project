@@ -1,14 +1,17 @@
-# Laundromat Booking System
+# Laundromat Booking System 📅
+
+Welcome to Washi2 Laundromat Booking System repository! This project is part of the **CAT201 - Integrated Software Development Workshop** course at USM. We’re bringing laundromats into the digital age! Our mission? To make laundry day a breeze, all while contributing to Sustainable Development Goal 11 – “Sustainable Cities and Communities.”
 
 ## 📜 Introduction 
 
-The Laundromat Booking System project is designed to aid in the operational efficiency of laundromats. The system facilitates seamless customer interactions, optimizes resource utilization, and contributes to the achievement of Sustainable Development Goal 11 (SDG 11) – “Sustainable Cities and Communities.”
+The Laundromat Booking System project is designed to aid in the digitalization of laundromat booking. T
+We chose SDG 11 because it aligns with the core objective of our system: improving urban living through effective, sustainable solutions. 
 
-We chose SDG 11 because it aligns with the core objective of our system: improving urban living through effective, sustainable solutions. By digitizing key processes like reservations, cancellations, and feedback, our app aims to make laundry services easier and better for both customers and laundromat owners. Ultimately, this system promotes the creation of resilient and sustainable urban communities.
+By digitizing key processes like reservations, cancellations, and feedback, our app aims to make laundry services easier and better for both customers and laundromat owners. Ultimately, this system promotes the creation of resilient and sustainable urban communities.
 
 ## 🛠️ System Modules
 
-### 1. **Sign-In Page**
+#### 1. **Sign-In Page**
 
    The Sign-In Page is the gateway for users to access the Laundromat Booking System. 
    - Users need to provide valid credentials (username and password) to log in.
@@ -16,7 +19,7 @@ We chose SDG 11 because it aligns with the core objective of our system: improvi
    - In case of incorrect login details, users will see an error message:
 "`Invalid username or password, please try again!`"
 
-### 2. **Booking Services**
+#### 2. **Booking Services**
    
    Customers can book laundry services by inputting the following details:
    - **`Name`**: Enter full name for record purposes
@@ -25,11 +28,11 @@ We chose SDG 11 because it aligns with the core objective of our system: improvi
    - **`Service Type`**: Choose from the available services (e.g wash & fold, dry cleaning, both)
    - **`Scheduling Date`**: Customers must schedule the date for dropping off and picking up their laundry.
 
-### 3. **Cancel Booking Information**
+#### 3. **Cancel Booking Information**
    
     Customers have the option to cancel their booking through the system
 
-### 4. **Display Booking Information**
+#### 4. **Display Booking Information**
 
    This module enables customers to view detailed information about their bookings, ensuring a seamless   experience:
    - **`Viewing Booking Details:`**
@@ -41,7 +44,7 @@ We chose SDG 11 because it aligns with the core objective of our system: improvi
      Customers can check their past booking details and track their laundry service history. This feature allows users to review previous transactions and make informed decisions about future bookings.
 
 
-### 5. **Feedback Feature**
+#### 5. **Feedback Feature**
 
    Customers can share their experience and satisfaction level with the laundry services:
 
@@ -52,6 +55,35 @@ We chose SDG 11 because it aligns with the core objective of our system: improvi
    - **`Rating Collection`**:
     
      The system includes a slider that collects user ratings. The user moves the slider left or right to indicate their satisfaction, with the far-right side indicating high satisfaction and the left side representing dissatisfaction. This helps the laundromat measure customer satisfaction and improve its services.
+
+## 💻 Technology Used
+
+1. **`JavaFX`**:
+
+   - Framework for building desktop application in java
+   - Provides features like UI Controls (Button, labels, text fields, event handling, animation)
+   - Aids in building modern and responsive design
+
+2. **`FXML`**:
+
+   - FXML is a markup language for separating design of user interface from logic of application
+   - Define the layout structure of UI componenets in FXML file.
+   - Will be loaded and manage by JavaFX controller
+   - This approach supports clean MVC (Model-View-Controller) architecture
+  
+3. **`Scene Builder`**:
+
+   - Visual tool that allows you to design the UI by dragging and dropping JavaFX componenet.
+   - It generates FXML files that is linked with Java controllers
+   - This tools simplifies the process of designing UI
+
+4. **`Event Handlers`**:
+
+   - JavaFX uses event listeners (like setOn Action, setOnMOuseClicked) to capture user interactions with UI
+  
+5. **`Data Management`**:
+
+---
 
 ## 📊 Future Enhancements
 
