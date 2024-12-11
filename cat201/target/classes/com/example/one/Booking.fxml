@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="SP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.one.BookingController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="170.0">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="170.0" stylesheets="@mainFrom.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="70.0" prefWidth="192.0" styleClass="header" stylesheets="@mainFrom.css">
+                     <children>
+                        <Label layoutX="22.0" layoutY="27.0" text="Washi Washi System" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane prefHeight="400.0" prefWidth="409.0" styleClass="white-form" stylesheets="@mainFrom.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="21.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleNavigationOne" text="Back to Dashboard">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="btn" />
+                        <String fx:value="nar-btn" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <styleClass>
+                  <String fx:value="left-form" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="192.0" prefHeight="400.0" prefWidth="408.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="192.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="AP" layoutY="-1.0" prefHeight="406.0" prefWidth="406.0" styleClass="white-form" stylesheets="@mainFrom.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="bookingButton" layoutX="176.0" layoutY="320.0" mnemonicParsing="false" onAction="#getData" stylesheets="@mainFrom.css" text="Proceed" textFill="#110404">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="click-btn" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                        <Label layoutX="24.0" layoutY="73.0" prefHeight="26.0" prefWidth="162.0" text="Number of Machine" />
+                        <Label fx:id="confirmation" layoutX="24.0" layoutY="360.0" prefHeight="19.0" prefWidth="361.0">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="282.0" text="Pick-up Date" />
+                        <Label layoutX="26.0" layoutY="165.0" text="Phone No." />
+                        <DatePicker fx:id="pickupDatePicker" layoutX="148.0" layoutY="277.0" promptText="Select date" />
+                     </children></AnchorPane>
+                  <Label layoutX="25.0" layoutY="38.0" text="Name " />
+                  <Label layoutX="25.0" layoutY="119.0" text="Service Type" />
+                  <Label layoutX="27.0" layoutY="202.0" text="Email" />
+                  <Label layoutX="27.0" layoutY="242.0" text="Drop-off Date" />
+                  <TextField fx:id="txtName" layoutX="148.0" layoutY="34.0" promptText="Enter Name" />
+                  <TextField fx:id="txtNumMachine" layoutX="148.0" layoutY="71.0" promptText="Enter Number of Machine" />
+                  <ChoiceBox fx:id="bookingChoiceBox" layoutX="148.0" layoutY="115.0" prefWidth="150.0" />
+                  <DatePicker fx:id="bookingDatePicker" layoutX="148.0" layoutY="236.0" promptText="Select date" />
+                  <TextField fx:id="txtPhone" layoutX="148.0" layoutY="159.0" promptText="Enter the Phone Number" />
+                  <TextField fx:id="txtEmail" layoutX="148.0" layoutY="196.0" promptText="Enter Email address" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

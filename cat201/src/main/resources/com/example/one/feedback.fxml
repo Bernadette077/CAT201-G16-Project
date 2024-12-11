@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+
+<StackPane fx:id="SP" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.one.FeedbackController">
+    <children>
+        <!-- HBox for organizing components horizontally -->
+        <HBox>
+            <!-- Sidebar -->
+            <AnchorPane prefHeight="400.0" prefWidth="170.0" stylesheets="@mainFrom.css">
+                <children>
+                    <AnchorPane prefHeight="70.0" prefWidth="192.0" styleClass="header">
+                        <children>
+                            <Label layoutX="22.0" layoutY="27.0" text="Washi Washi System" textFill="WHITE">
+                                <font>
+                                    <Font name="Arial Rounded MT Bold" size="15.0" />
+                                </font>
+                            </Label>
+                            <AnchorPane prefHeight="400.0" prefWidth="409.0" styleClass="white-form" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        </children>
+                    </AnchorPane>
+                    <Button layoutX="21.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleNavigationOne" text="Back to Dashboard">
+                        <styleClass>
+                            <String fx:value="shadow" />
+                            <String fx:value="btn" />
+                            <String fx:value="nar-btn" />
+                        </styleClass>
+                    </Button>
+                </children>
+                <styleClass>
+                    <String fx:value="left-form" />
+                    <String fx:value="shadow" />
+                </styleClass>
+            </AnchorPane>
+
+            <!-- Main Content -->
+            <AnchorPane prefHeight="400.0" prefWidth="408.0" styleClass="white-form" stylesheets="@mainFrom.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <Label fx:id="title" layoutX="115.0" layoutY="29.0" prefHeight="23.0" prefWidth="144.0" text="Feedback Form">
+                        <font>
+                            <Font name="Arial Bold" size="18.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="name" layoutX="45.0" layoutY="92.0" text="Name:" />
+                    <TextField fx:id="nameField" layoutX="111.0" layoutY="86.0" prefWidth="150.0" promptText="Write your name" />
+                    <Label fx:id="feedbackLabel" layoutX="47.0" layoutY="136.0" text="Feedback :" />
+                    <ChoiceBox fx:id="feedbackTypeChoiceBox" layoutX="125.0" layoutY="136.0">
+                        <!-- No items specified here -->
+                    </ChoiceBox>
+
+                    <Label fx:id="rating" layoutX="47.0" layoutY="199.0" text="Rating:" />
+                    <Slider fx:id="ratingSlider" layoutX="109.0" layoutY="199.0" prefHeight="16.0" prefWidth="195.0" />
+                    <Label fx:id="review" layoutX="46.0" layoutY="246.0" text="Review:" />
+                    <TextArea fx:id="reviewTextArea" layoutX="105.0" layoutY="238.0" prefHeight="50.0" prefWidth="223.0" promptText="Please write your review" />
+                    <Button fx:id="submitButton" layoutX="163.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleSubmitButton" stylesheets="@mainFrom.css" text="Submit" textFill="#110404">
+                    <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="click-btn" />
+                        <String fx:value="shadow" />
+                    </styleClass>
+                </Button>
+                    <Label fx:id="thankYouLabel" layoutX="80.0" layoutY="120.0" text="Thank you for your feedback!" visible="false">
+                        <font>
+                            <Font name="System Bold" size="18.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="makeAnotherResponseLabel" layoutX="80.0" layoutY="150.0" text="Make Another Response" onMouseClicked="#handleMakeAnotherResponse" stylesheets="@mainFrom.css" styleClass="blue-text"/>
+                </children>
+            </AnchorPane>
+        </HBox>
+    </children>
+</StackPane>
