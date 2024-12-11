@@ -3,16 +3,17 @@
   <img alt="Laundry Service" height="300px" src="https://img.freepik.com/premium-vector/laundry-service-illustration-flat-design_98292-22156.jpg?w=2000">
   
   <h1>Laundromat Booking System</h1>
+  <p>The Laundromat Booking System project is designed to aid in the digitalization of laundromat booking.
+We chose SDG 11 because it aligns with the core objective of our system: improving urban living through effective, sustainable solutions. 
+
+By digitizing key processes like reservations, cancellations, and feedback, our app aims to make laundry services easier and better for both customers and laundromat owners. Ultimately, this system promotes the creation of resilient and sustainable urban communities.</p>
 </div>
 
 
 
-## 📜 Introduction 
 
-The Laundromat Booking System project is designed to aid in the digitalization of laundromat booking.
-We chose SDG 11 because it aligns with the core objective of our system: improving urban living through effective, sustainable solutions. 
 
-By digitizing key processes like reservations, cancellations, and feedback, our app aims to make laundry services easier and better for both customers and laundromat owners. Ultimately, this system promotes the creation of resilient and sustainable urban communities.
+
 
 ## 🛠️ System Modules
 
