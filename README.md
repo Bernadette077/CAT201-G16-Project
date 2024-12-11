@@ -84,7 +84,7 @@ By digitizing key processes like reservations, cancellations, and feedback, our 
 
 4. **`Event Handlers`**:
 
-   - JavaFX uses event listeners (like setOn Action, setOnMOuseClicked) to capture user interactions with UI
+   - JavaFX uses event listeners `(setOnAction, setOnMouseClicked)` to capture user interactions with UI
   
 5. **`Data Management`**:
 
