@@ -1,7 +1,9 @@
 
-<img align="center" alt="Coding" height= 300px src="https://img.freepik.com/premium-vector/laundry-service-illustration-flat-design_98292-22156.jpg?w=2000">
-
-# Laundromat Booking System 
+<div align="center">
+  <img alt="Laundry Service" height="300px" src="https://img.freepik.com/premium-vector/laundry-service-illustration-flat-design_98292-22156.jpg?w=2000">
+  
+  <h1>Laundromat Booking System</h1>
+</div>
 
 
 
