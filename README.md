@@ -1,6 +1,6 @@
 # Laundromat Booking System 📅
 
-Welcome to Washi2 Laundromat Booking System repository! This project is part of the **CAT201 - Integrated Software Development Workshop** course at USM. We’re bringing laundromats into the digital age! Our mission? To make laundry day a breeze, all while contributing to Sustainable Development Goal 11 – “Sustainable Cities and Communities.”
+
 
 ## 📜 Introduction 
 
